@@ -17,7 +17,12 @@
 
 def smallest_multiple(digits, multiple_of):
     # 此处编写代码
-
+    start = 10 ** (digits - 1)
+    result = ((start + multiple_of - 1) // multiple_of) * multiple_of
+    if result < 10 ** digits:
+        return result
+    else:
+        return  False
 # 获取输入
 digits = int(input())
 multiple_of = int(input())
