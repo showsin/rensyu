@@ -15,7 +15,7 @@
 
 def max_adjacent(arr):
     # 此处编写代码
-    
+    return list(map(lambda x: max(x[0], x[1]), zip(arr,arr[1:])))
 # 获取输入，转换为列表
 arr = list(map(int, input().split()))
 
