@@ -18,7 +18,7 @@ pineapple
 def letter_indices(word):
     # 此处编写代码
     # new_dict = {}
-    new_dict = {letter: [] for letter in set(word)}
+    new_dict = {letter: [] for letter in word}
     for i, letter in enumerate(word):
         new_dict[letter].append(i)
     return new_dict
